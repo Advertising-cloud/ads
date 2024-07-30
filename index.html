@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page showcasing 12 different ADS buttons with links. Click on each button to open the respective ad in a new tab.">
+    <meta name="keywords" content="ADS, buttons, links, advertisements">
+    <title>ADS</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            position: relative; /* Positioning the links */
+        }
+        .header {
+            background-color: #8a2be2;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(33.333% - 20px); /* Responsive width with gap adjustment */
+            box-sizing: border-box;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            box-sizing: border-box;
+            transition: opacity 0.3s ease;
+            margin-bottom: 10px;
+        }
+        .button1 { background-color: #ff007f; }
+        .button2 { background-color: #00bfff; }
+        .button3 { background-color: #32cd32; }
+        .button4 { background-color: #ff6347; }
+        .button5 { background-color: #ff1493; }
+        .button6 { background-color: #00fa9a; }
+        .button7 { background-color: #1e90ff; }
+        .button8 { background-color: #ff4500; }
+        .button9 { background-color: #8a2be2; }
+        .button10 { background-color: #ff8c00; }
+        .button11 { background-color: #20b2aa; }
+        .button12 { background-color: #d2691e; }
+        .button:hover {
+            opacity: 0.9;
+        }
+        .click-count {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+        footer {
+            background-color: #8a2be2;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .button-wrapper {
+                width: calc(50% - 20px); /* Adjust for smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .button-wrapper {
+                width: 100%; /* Full width for mobile screens */
+            }
+        }
+        .contact-links {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%); /* Center vertically */
+            display: flex;
+            flex-direction: column; /* Stack links vertically */
+            gap: 10px; /* Space between links */
+        }
+        .telegram-link, .whatsapp-link {
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .telegram-link {
+            background-color: #0088cc; /* Default color for Telegram */
+        }
+        .whatsapp-link {
+            background-color: #25D366; /* WhatsApp color */
+        }
+        .telegram-link:hover {
+            background-color: #007ab8;
+        }
+        .whatsapp-link:hover {
+            background-color: #1ebe5f;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Advertising</h1>
+    </div>
+    <div class="container">
+        <div class="button-wrapper">
+            <a href="https://www.highratecpm.com/vn8p99dfge?key=fee7dbff06a3dcc56aaefc5cbc99d2cd" class="button button1" aria-label="Advertise with us - Offer 1" target="_blank">ADS 1</a>
+            <span class="click-count" id="click-count-1">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://www.highratecpm.com/u5pmbqre?key=bb18f0f87b5ccfee5ec9fdb39a3593b7" class="button button2" aria-label="Advertise with us - Offer 2" target="_blank">ADS 2</a>
+            <span class="click-count" id="click-count-2">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://www.highratecpm.com/hbt1dcxijy?key=dc69cdf6f6960c2da8bfa3a3e411b830" class="button button3" aria-label="Advertise with us - Offer 3" target="_blank">ADS 3</a>
+            <span class="click-count" id="click-count-3">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://www.highratecpm.com/dxy6vd2em6?key=b13529eedea89d8b1a754aa58027ef73" class="button button4" aria-label="Advertise with us - Offer 4" target="_blank">ADS 4</a>
+            <span class="click-count" id="click-count-4">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://de89pe.click/bdf991afa9f56bb4d15c/c1475423f9/?placementName=default" class="button button5" aria-label="Special Page" target="_blank">Special Page</a>
+            <span class="click-count" id="click-count-5">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://psoagnimsar.net/4/7736878" class="button button6" aria-label="Advertise with us - Offer 6" target="_blank">ADS 6</a>
+            <span class="click-count" id="click-count-6">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://beewoupaule.net/4/7736904" class="button button7" aria-label="Advertise with us - Offer 7" target="_blank">ADS 7</a>
+            <span class="click-count" id="click-count-7">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://ilajaing.com/4/7801236" class="button button8" aria-label="Advertise with us - Offer 8" target="_blank">ADS 8</a>
+            <span class="click-count" id="click-count-8">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://haisteegee.com/4/7801235" class="button button9" aria-label="Advertise with us - Offer 9" target="_blank">ADS 9</a>
+            <span class="click-count" id="click-count-9">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://sicouthautso.net/4/7801234" class="button button10" aria-label="Advertise with us - Offer 10" target="_blank">ADS 10</a>
+            <span class="click-count" id="click-count-10">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://de89pe.click/bdf991afa9f56bb4d15c/c5515f28e5/?placementName=default" class="button button11" aria-label="Advertise with us - Offer 11" target="_blank">ADS 11</a>
+            <span class="click-count" id="click-count-11">0 clicks</span>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://de89pe.click/bdf991afa9f56bb4d15c/b6dcddc492/?placementName=default" class="button button12" aria-label="Advertise with us - Offer 12" target="_blank">ADS 12</a>
+            <span class="click-count" id="click-count-12">0 clicks</span>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved. | Page created by [Fiona Angel]</p>
+    </footer>
+    <div class="contact-links">
+        <a href="https://t.me/yourtelegramusername" class="telegram-link" target="_blank" aria-label="Chat with us on Telegram">Telegram</a>
+        <a href="https://wa.me/yourphonenumber" class="whatsapp-link" target="_blank" aria-label="Chat with us on WhatsApp">WhatsApp</a>
+    </div>
+    <script>
+        // Initialize click counts
+        const clickCounts = Array.from({ length: 12 }, () => 0);
+
+        document.querySelectorAll('.button').forEach((button, index) => {
+            const clickCountSpan = document.querySelector(`#click-count-${index + 1}`);
+            button.addEventListener('click', () => {
+                clickCounts[index]++;
+                clickCountSpan.textContent = `${clickCounts[index]} clicks`;
+            });
+        });
+    </script>
+</body>
+</html>
